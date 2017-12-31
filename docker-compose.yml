@@ -1,0 +1,38 @@
+version: '2'
+networks:
+    app:
+        driver: 'bridge'
+
+services:
+  php:
+      build:
+          context: .
+          dockerfile: .docker/php/Dockerfile
+      volumes:
+          - ./app:/opt/projects/app
+      container_name: php
+      networks:
+          - app
+  mysql:
+      build:
+          context: .
+          dockerfile: .docker/mysql/Dockerfile
+      container_name: db
+      environment:
+          MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      networks:
+          - app
+  web:
+      build:
+          context: .
+          dockerfile: .docker/web/Dockerfile
+      volumes:
+          - ./app:/opt/projects/app
+      container_name: web
+      ports:
+          - "80:80"
+      links:
+          - php
+          - mysql
+      networks:
+          - app
