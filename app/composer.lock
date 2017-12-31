@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6663a6e6eaa4e90f9e4076c86574d1f1",
-    "content-hash": "99ebb6e83caf7a9f8ae98b01cb74f335",
+    "hash": "20217e7b1330e5c04da2c8cd5bf81ce3",
+    "content-hash": "c1a0704b4fca5092e0410b1d2fbb4cb9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -70,6 +70,18 @@
                 "zip"
             ],
             "time": "2016-11-03 16:10:31"
+        },
+        {
+            "name": "ali.sarfaraz/products_ct",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "modules/features/products_ct",
+                "reference": "66970a58747c5b1f9661dcb4b9972dfcaf0f69c0",
+                "shasum": null
+            },
+            "type": "drupal-module-features",
+            "description": "Exporting product content type to a module."
         },
         {
             "name": "asm89/stack-cors",
@@ -6139,7 +6151,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "ali.sarfaraz/products_ct": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

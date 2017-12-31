@@ -6335,5 +6335,19 @@
         "support": {
             "source": "http://cgit.drupalcode.org/features"
         }
+    },
+    {
+        "name": "ali.sarfaraz/products_ct",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "dist": {
+            "type": "path",
+            "url": "modules/features/products_ct",
+            "reference": "66970a58747c5b1f9661dcb4b9972dfcaf0f69c0",
+            "shasum": null
+        },
+        "type": "drupal-module-features",
+        "installation-source": "dist",
+        "description": "Exporting product content type to a module."
     }
 ]
