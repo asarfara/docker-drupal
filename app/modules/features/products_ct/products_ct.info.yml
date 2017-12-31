@@ -1,7 +1,11 @@
 name: Product CT
 description: 'Provides Product content type and related configuration. '
+
+package: Features
+
 type: module
 core: 8.x
+
 dependencies:
   - field
   - link

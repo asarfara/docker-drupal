@@ -17,10 +17,15 @@
         {
             "type": "path",
             "url": "modules/features/products_ct"
+        },
+        {
+            "type": "path",
+            "url": "modules/custom/products"
         }
 
     ],
     "require": {
+        "ali.sarfaraz/products": "dev-master",
         "ali.sarfaraz/products_ct": "dev-master",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
@@ -28,6 +33,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.4",
         "drupal/features": "^3.5",
+        "drupal/shortcode": "^1.0@RC",
         "drush/drush": "~8.0|^9.0.0-beta8",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"

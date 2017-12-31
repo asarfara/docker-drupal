@@ -20,3 +20,9 @@ Run below command to enable modules.
 ```
 docker exec -i php /opt/projects/app/vendor/bin/drush en features_ui --root=/opt/projects/app/web
 ```
+
+## Cache Clear
+Run below command to clear cache.
+```
+docker exec -i php /opt/projects/app/vendor/bin/drush cache-rebuild --root=/opt/projects/app/web
+```

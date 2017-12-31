@@ -9,10 +9,6 @@
 /app/web/profiles/contrib/
 /app/web/libraries/
 
-# Ignore sensitive information
-/app/web/sites/*/settings.php
-/app/web/sites/*/settings.local.php
-
 # Ignore Drupal's file directory
 /app/web/sites/*/files/
 

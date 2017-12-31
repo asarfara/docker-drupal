@@ -1,0 +1,11 @@
+name: Products
+description: Deals with products.
+
+package: Custom
+
+type: module
+core: 8.x
+
+dependencies:
+  - products_ct
+  - shortcode

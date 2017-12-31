@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "20217e7b1330e5c04da2c8cd5bf81ce3",
-    "content-hash": "c1a0704b4fca5092e0410b1d2fbb4cb9",
+    "hash": "689693afb08cb1104cd08dae8a719757",
+    "content-hash": "144c8c1011f28d324dfcbdb997956e5d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -70,6 +70,18 @@
                 "zip"
             ],
             "time": "2016-11-03 16:10:31"
+        },
+        {
+            "name": "ali.sarfaraz/products",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "modules/custom/products",
+                "reference": "7f3eb782066bb292b088555f8b629cc89bb8dae2",
+                "shasum": null
+            },
+            "type": "drupal-module-custom",
+            "description": "Dealing with products."
         },
         {
             "name": "ali.sarfaraz/products_ct",
@@ -1713,6 +1725,57 @@
             "homepage": "https://www.drupal.org/project/features",
             "support": {
                 "source": "http://cgit.drupalcode.org/features"
+            }
+        },
+        {
+            "name": "drupal/shortcode",
+            "version": "1.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/shortcode",
+                "reference": "8.x-1.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/shortcode-8.x-1.0-rc1.zip",
+                "reference": "8.x-1.0-rc1",
+                "shasum": "6837969d2ff684e9dba02c234d13f2a36c54f67d"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1487350082",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Denes.Szabo",
+                    "homepage": "https://www.drupal.org/user/582668"
+                },
+                {
+                    "name": "squall3d",
+                    "homepage": "https://www.drupal.org/user/1256364"
+                }
+            ],
+            "description": "Provides shortcodes filter framework and API (like WP shortcodes)",
+            "homepage": "https://www.drupal.org/project/shortcode",
+            "support": {
+                "source": "http://cgit.drupalcode.org/shortcode"
             }
         },
         {
@@ -6152,7 +6215,9 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ali.sarfaraz/products_ct": 20
+        "ali.sarfaraz/products": 20,
+        "ali.sarfaraz/products_ct": 20,
+        "drupal/shortcode": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
