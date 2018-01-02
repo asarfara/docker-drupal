@@ -1,0 +1,74 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the products shortcode.
+ *
+ * Available variables:
+ * - attributes: The attributes array.
+ */
+#}
+
+{% for product in attributes %}
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">{{ product.title }}</h2>
+            <p class="lead">{{ product.description }}</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="{{ product.imgUrls|first }}" data-holder-rendered="true">
+        </div>
+    </div>
+    <br />
+{% endfor %}
+
+{% for product in attributes %}
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">{{ product.title }}</h2>
+            <p class="lead">{{ product.description }}</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="{{ product.imgUrls|first }}" data-holder-rendered="true">
+        </div>
+    </div>
+    <br />
+{% endfor %}
+
+{% for product in attributes %}
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">{{ product.title }}</h2>
+            <p class="lead">{{ product.description }}</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="{{ product.imgUrls|first }}" data-holder-rendered="true">
+        </div>
+    </div>
+    <br />
+{% endfor %}
+
+{% for product in attributes %}
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">{{ product.title }}</h2>
+            <p class="lead">{{ product.description }}</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="{{ product.imgUrls|first }}" data-holder-rendered="true">
+        </div>
+    </div>
+    <br />
+{% endfor %}
+
+{% for product in attributes %}
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">{{ product.title }}</h2>
+            <p class="lead">{{ product.description }}</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="{{ product.imgUrls|first }}" data-holder-rendered="true">
+        </div>
+    </div>
+    <br />
+{% endfor %}

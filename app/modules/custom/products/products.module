@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function products_theme()
+{
+    return [
+        'shortcode_products' => [
+            'variables' => [
+                'attributes' => [],
+            ],
+        ],
+    ];
+}
