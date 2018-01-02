@@ -26,3 +26,20 @@ Run below command to clear cache.
 ```
 docker exec -i php /opt/projects/app/vendor/bin/drush cache-rebuild --root=/opt/projects/app/web
 ```
+
+## Caching Stats
+Below stats are based on just one module called products. This module calls database couple of times to grab information about all products and display it in a templated layout.
+
+- Stock config probably have opcache installed as default and stock application caching from drupal.
+    - Cache Cleared: 6.66s
+    - Second Refresh: 134ms
+
+- Stock caching + Memcached installed.
+    - Cache Cleared: 6s
+    - Second Refresh: 99ms
+
+
+
+
+
+

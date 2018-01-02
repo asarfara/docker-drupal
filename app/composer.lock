@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "689693afb08cb1104cd08dae8a719757",
-    "content-hash": "144c8c1011f28d324dfcbdb997956e5d",
+    "hash": "78abba03d4a50801c058c5e6f03d11f6",
+    "content-hash": "f4e9d81a2d533755b87f3bd29ae3f413",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1725,6 +1725,70 @@
             "homepage": "https://www.drupal.org/project/features",
             "support": {
                 "source": "http://cgit.drupalcode.org/features"
+            }
+        },
+        {
+            "name": "drupal/memcache",
+            "version": "2.0.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/memcache",
+                "reference": "8.x-2.0-alpha5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/memcache-8.x-2.0-alpha5.zip",
+                "reference": "8.x-2.0-alpha5",
+                "shasum": "4210217dd4040a5687831da82884f7bcad155c66"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-alpha5",
+                    "datestamp": "1508351344",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy",
+                    "homepage": "https://www.drupal.org/user/409"
+                },
+                {
+                    "name": "catch",
+                    "homepage": "https://www.drupal.org/user/35733"
+                },
+                {
+                    "name": "damiankloip",
+                    "homepage": "https://www.drupal.org/user/1037976"
+                },
+                {
+                    "name": "jvandyk",
+                    "homepage": "https://www.drupal.org/user/2375"
+                },
+                {
+                    "name": "robertDouglass",
+                    "homepage": "https://www.drupal.org/user/5449"
+                }
+            ],
+            "description": "High performance integration with memcache.",
+            "homepage": "http://drupal.org/project/memcache",
+            "support": {
+                "source": "http://cgit.drupalcode.org/memcache",
+                "issues": "https://www.drupal.org/project/issues/memcache"
             }
         },
         {
@@ -6217,6 +6281,7 @@
     "stability-flags": {
         "ali.sarfaraz/products": 20,
         "ali.sarfaraz/products_ct": 20,
+        "drupal/memcache": 15,
         "drupal/shortcode": 5
     },
     "prefer-stable": true,

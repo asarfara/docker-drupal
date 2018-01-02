@@ -33,6 +33,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.4",
         "drupal/features": "^3.5",
+        "drupal/memcache": "^2.0@alpha",
         "drupal/shortcode": "^1.0@RC",
         "drush/drush": "~8.0|^9.0.0-beta8",
         "webflo/drupal-finder": "^1.0.0",
