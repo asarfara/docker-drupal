@@ -30,9 +30,20 @@ services:
           - ./app:/opt/projects/app
       container_name: web
       ports:
-          - "80:80"
+          - "8080:80"
       links:
           - php
           - mysql
+      networks:
+          - app
+  varnish:
+      build:
+          context: .
+          dockerfile: .docker/varnish/Dockerfile
+      container_name: varnish
+      ports:
+          - "80:80"
+      links:
+          - web
       networks:
           - app
