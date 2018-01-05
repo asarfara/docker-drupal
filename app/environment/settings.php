@@ -793,8 +793,3 @@ $settings['entity_update_batch_size'] = 50;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $config_directories['sync'] = '../config/sync';
-
-$settings['memcache']['servers'] = ['127.0.0.1:11211' => 'default'];
-
-$settings['cache']['bins']['render'] = 'cache.backend.memcache';
-$settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.memcache';

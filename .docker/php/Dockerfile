@@ -22,10 +22,6 @@ RUN apt-get update && \
         pdo_mysql \
         opcache
 
-RUN apt-get update && apt-get install -y libmemcached-dev zlib1g-dev \
-    && pecl install memcached-3.0.3 \
-    && docker-php-ext-enable memcached
-
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Permission fix

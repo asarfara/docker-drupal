@@ -16,6 +16,7 @@ class Product implements DaoInterface
     {
         $nids = \Drupal::entityQuery('node')->condition('type','product')->execute();
         $nodes =  \Drupal\node\Entity\Node::loadMultiple($nids);
+
         return $nodes;
     }
 }

@@ -6,7 +6,6 @@
 - Nginx
 - PHP FPM
 - PHP 7.1
-- Memcached
 - Varnish
 
 ## New database and site setup:
@@ -38,68 +37,34 @@ siege -b -t60S  http://localhost
 
 - Stock config probably have opcache installed as default and stock application caching from drupal.
 ```
-Transactions:                   4684 hits
+Transactions:                   5091 hits
 Availability:                 100.00 %
-Elapsed time:                  59.30 secs
-Data transferred:             121.64 MB
-Response time:                  0.31 secs
-Transaction rate:              78.99 trans/sec
-Throughput:                     2.05 MB/sec
-Concurrency:                   24.83
-Successful transactions:        4684
+Elapsed time:                  59.23 secs
+Data transferred:             132.13 MB
+Response time:                  0.29 secs
+Transaction rate:              85.95 trans/sec
+Throughput:                     2.23 MB/sec
+Concurrency:                   24.86
+Successful transactions:        5091
 Failed transactions:               0
-Longest transaction:           10.27
-Shortest transaction:           0.00
-
-```
-
-- Stock caching + Memcached installed.
-```
-Transactions:                   3872 hits
-Availability:                  99.97 %
-Elapsed time:                  59.66 secs
-Data transferred:             100.76 MB
-Response time:                  0.38 secs
-Transaction rate:              64.90 trans/sec
-Throughput:                     1.69 MB/sec
-Concurrency:                   24.82
-Successful transactions:        3872
-Failed transactions:               1
-Longest transaction:           15.87
-Shortest transaction:           0.00
-```
-
-- Stock caching + Memecached + Varnish(Default config).
-```
-Transactions:                   4188 hits
-Availability:                 100.00 %
-Elapsed time:                  59.51 secs
-Data transferred:             108.99 MB
-Response time:                  0.35 secs
-Transaction rate:              70.37 trans/sec
-Throughput:                     1.83 MB/sec
-Concurrency:                   24.81
-Successful transactions:        4188
-Failed transactions:               0
-Longest transaction:           11.85
+Longest transaction:            5.27
 Shortest transaction:           0.00
 ```
     
-- Stock caching + Memecached + Varnish(Config with enhancements).
+- Stock caching + Varnish(Config with enhancements).
 ```
-Transactions:                   5016 hits
+Transactions:                   5347 hits
 Availability:                 100.00 %
-Elapsed time:                  59.10 secs
-Data transferred:             130.45 MB
-Response time:                  0.29 secs
-Transaction rate:              84.87 trans/sec
-Throughput:                     2.21 MB/sec
+Elapsed time:                  59.09 secs
+Data transferred:             139.00 MB
+Response time:                  0.27 secs
+Transaction rate:              90.49 trans/sec
+Throughput:                     2.35 MB/sec
 Concurrency:                   24.82
-Successful transactions:        5016
+Successful transactions:        5347
 Failed transactions:               0
-Longest transaction:            2.77
+Longest transaction:            2.98
 Shortest transaction:           0.00
-
 ```
 
 

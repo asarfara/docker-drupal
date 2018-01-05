@@ -33,9 +33,11 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.4",
         "drupal/features": "^3.5",
-        "drupal/memcache": "^2.0@alpha",
+        "drupal/purge": "^3.0",
+        "drupal/purge_purger_http": "^1.0",
         "drupal/shortcode": "^1.0@RC",
         "drush/drush": "~8.0|^9.0.0-beta8",
+        "psr/log": "^1.0",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
